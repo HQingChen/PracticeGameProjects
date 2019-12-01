@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8181341207811146978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2482675959662828514}
+  - component: {fileID: 1341749658123727569}
+  - component: {fileID: 460994417673296159}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2482675959662828514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181341207811146978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1341749658123727569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181341207811146978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e24e1b5d0f447dda0bc92c77bd904d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cols: 10
+  rows: 10
+  trapCount:
+    min: 6
+    max: 10
+  treeCount:
+    min: 2
+    max: 3
+  home: {fileID: 2523992392988549137, guid: 73cbdb88d70664717ab87de8f0191492, type: 3}
+  fogTile: {fileID: 3327472916836051095, guid: adf038856f43f4e5cbf7867ee2e0fa6f, type: 3}
+  trapTile: {fileID: 2295668089566288296, guid: 84b28e722d29d451a880777bfd571972,
+    type: 3}
+  treeTile: {fileID: 3696143743980520498, guid: fd972a187f763402cbe4337af232eba7,
+    type: 3}
+  flowerTile: {fileID: 7503690941243151221, guid: a645c2634eb8144fa84d23b29d318caf,
+    type: 3}
+--- !u!114 &460994417673296159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181341207811146978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f9846b0dd5344fb84354af43288bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnDelay: 0.1
+  prompts: {fileID: 872004801473021164, guid: 7c7c8515b639a426db6e8f81b8547e34, type: 3}
+  boardScript: {fileID: 0}
+  playersTurn: 1
